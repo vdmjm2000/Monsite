@@ -1,0 +1,10 @@
+.warning {
+  position: relative;
+  border: 2px solid orange;
+  padding: 2px;
+}
+
+.warning p {
+  color: orange;
+}
+/*# sourceMappingURL=style.css.map */
