@@ -1,0 +1,107 @@
+
+
+/* Exercice*/
+
+html, body {
+        margin: 0;
+        height: 5000px;
+        }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: [start] auto [top-separator] auto [bottom-separator] auto [end];
+        gap: 0px;
+        height: 100vh;
+                
+      }
+      
+      .header {
+      position:sticky;
+      left:0%;
+      top: 0%;
+      background: purple;
+      width: 100%;
+      transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+      
+      }
+      
+      .archives {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        background: lightpink;
+      }
+
+      .content {
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        background:cadetblue
+        }
+
+
+      .ads {
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        background: blue;
+      }
+
+
+      .sponsor {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        background: green;
+      }
+      
+      
+      .footer {
+        grid-column-start: 5;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        background: palegoldenrod;
+      }
+
+      .transition{
+        height:100px;
+        width: 100px;
+        background-color: firebrick;
+        transition: width 5000ms;
+        }
+
+      .transition:hover {
+        height:100px;
+        width: 500px;
+        background-color: burlywood;
+        transition: width 5000ms;
+        border-radius: 10%;
+        }
+
+
+
+      .animate-transform:hover {
+        animation: 2s goRight infinite alternate ;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        background-image: url("./Media/jm.jpg");
+      }
+
+      @keyframes goRight {
+        from {
+          transform:translateX(0%) rotate(0deg);
+          background-image: url("./Media/jm.jpg");
+        }
+
+        to {
+          transform:translateX(100%) rotate(180deg);
+          background-color: coral;
+            }
+      }

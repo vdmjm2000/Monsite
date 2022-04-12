@@ -1,0 +1,41 @@
+header {
+        height: 200px;
+        background-color: cadetblue;
+        border: 1px solid;
+     }
+    
+    .logo, .badge {
+        background-color: coral;
+    }
+    
+    nav {
+        height: 80px;
+        background-color: darkgoldenrod;
+    }
+    
+    aside {
+        height: auto;
+        background-color: lightslategray;
+    }
+    
+    .article1, .article2, .article3 {
+        height: 200px;
+        background-color: deeppink;
+    }
+    .article4 {
+        height: 400px;
+        background-color: greenyellow ;
+    }
+    
+    footer {
+        height: 200px;
+        background-color: cadetblue;
+    }
+
+    .row {
+            border: 1px solid;
+    }
+
+    .col {
+            border: 1px solid;
+    }
